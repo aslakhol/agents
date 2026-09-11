@@ -1,0 +1,5 @@
+interface:
+  display_name: "Support"
+  short_description: "Investigate support questions and product requests"
+policy:
+  allow_implicit_invocation: false
