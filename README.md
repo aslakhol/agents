@@ -33,13 +33,13 @@ agents/
 │           └── grilling/
 │               └── SKILL.md
 ├── scripts/
-│   └── install
+│   └── install.ts
 └── scratch/
 ```
 
 Skills live under `globals/skills/`, either directly or in a group. A group might bring together skills from one author, like `matt-pocock/`, or skills about the same topic. Each group has a README which stays here in the repo.
 
-A skill directory contains `SKILL.md` and any supporting scripts, references, or assets it needs. We link the whole directory, so those files stay together.
+A skill directory contains `SKILL.md` and any supporting scripts, references, or assets it needs. Its YAML frontmatter has a `name` matching the directory and a `description` explaining when to use it. We link the whole directory, so those files stay together.
 
 ## How the agents find the files
 
@@ -56,7 +56,14 @@ Since we flatten the skills into one list each installed skill needs a unique di
 
 ## Everyday use
 
-Run `scripts/install` to set up the links. It finds the skills under `globals/skills/` and links each one into both agents' skill directories. Run it again when you add, move, or rename a skill, or move the repo itself.
+```sh
+pnpm install
+pnpm setup
+```
+
+`pnpm setup` checks the repo, links the global instructions and skills, and removes broken or obsolete skill links. It leaves real files and folders alone, except for empty global instruction files that it replaces with links. Run it again when you add, move, or rename a skill, or move the repo itself.
+
+Use `pnpm check` to preview needed changes without applying them, or `pnpm validate` to check just the repo. Validation catches duplicate names and invalid skill metadata. Skill names use lowercase letters, numbers, and single hyphens. `pnpm test` and `pnpm typecheck` check the installer itself.
 
 For everyday edits, just change the files here. There's only one copy, so there's nothing to sync and no commit needed to make a change available. An agent may need a fresh session to pick up instructions it has already read.
 

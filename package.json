@@ -1,0 +1,23 @@
+{
+  "name": "agent-files",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.22.0",
+  "engines": {
+    "node": ">=24.3.0"
+  },
+  "scripts": {
+    "setup": "node scripts/install.ts",
+    "check": "node scripts/install.ts --check",
+    "validate": "node scripts/install.ts --validate",
+    "test": "node --test scripts/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "typescript": "^7.0.2"
+  }
+}
