@@ -1,0 +1,5 @@
+interface:
+  display_name: "Review help"
+  short_description: "Review important code snippets together"
+policy:
+  allow_implicit_invocation: false
