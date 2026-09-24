@@ -36,7 +36,8 @@ I wanted to share some of my preferences here so we can be more aligned as we wo
 - You should run repo-wide commands such as test, type-check, or lint before you push to a branch or make a PR. Not many times while you work.
 - Local DBs have easy methods for resetting, which I will use when needed. You don’t need to worry about resetting local DB state unless asked.
 - I will often have a dev environment running; check and use that before spinning up your own environment if possible.
-- I prefer work to be in atomic, reviewable commits.
+- I prefer to make one commit per separately justifiable change, including its required caller and test updates. Each commit explains its own change and why; the PR explains the overall solution.
+- If I ask you to make a fresh branch from main, you should update my local main as well.
 
 ## Pull Requests
 
