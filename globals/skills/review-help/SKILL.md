@@ -4,4 +4,4 @@ description: Help me review a PR through important code snippets and prompts to 
 disable-model-invocation: true
 ---
 
-Help me review this PR. Please present the code snippets you regard as important, and give me a prompt to comment on it. The presentation should follow a logical order. In you presentation please be very precise in your wording and dont overload me with information.
+Help me review this PR. Please present the code snippets you regard as important, and give me a prompt to comment on it. The presentation should follow a logical order. In you presentation please be very precise in your wording. Present all your findings at once under numbered sections and dont overload me with information.
