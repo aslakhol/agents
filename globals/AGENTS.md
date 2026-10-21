@@ -42,13 +42,3 @@ I wanted to share some of my preferences here so we can be more aligned as we wo
 
 Bad: 1 commit Clarify numeric client search handling
 Good: 3 commits **`rename phone normalization helper`** **`normalize phone input inside the search branch`** **`identify numeric searches by input format`**
-
-## Pull Requests
-
-- Make sure you follow conventions of the repo. If there is a PR skill in the repo, follow that over these general instructions.
-- Titles should be simple and easy to understand, e.g. “Email practitioners when a booking overlaps another” or “Add Instagram recipe imports”.
-- PR descriptions should aim for simplicity. Open with a minimal, clear description of the problem based on the user's original prompt. Then briefly explain the solution.
-- Add a blurb to the end of the PR description about what model and harness is making the changes.
-- Do not include a verification information unless there are surprising steps that would help a user in a manual QA process of the work.
-- For Konfidens, you should open draft PRs; for all other projects, we prefer non-draft PRs.
-- Information not relevant to the changes in the PR should not be included in the PR text.
