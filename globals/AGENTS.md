@@ -15,6 +15,7 @@ I wanted to share some of my preferences here so we can be more aligned as we wo
 ## Coding preferences - General
 
 - Keep things simple. Channel “yagni” energy unless told otherwise.
+- Prefer built-in capabilities of our existing tools over custom implementations, even when that means accepting minor discrepancies with the spec. If meeting the spec would require substantial custom code, explain the simpler option and what we'd give up, then ask me before building the custom version.
 - TypeScript is useful; take advantage of it.
 - Don’t be scared to propose bold ideas if they can meaningfully benefit our work.
 - Tests are good when useful. Endless smoke tests, “regression tests” for feature deletions, testing the rendering of React components, etc much less good. Tests should be focused, not slop.
