@@ -49,5 +49,6 @@ Good: 3 commits **`rename phone normalization helper`** **`normalize phone input
 - Titles should be simple and easy to understand, e.g. “Email practitioners when a booking overlaps another” or “Add Instagram recipe imports”.
 - PR descriptions should aim for simplicity. Open with a minimal, clear description of the problem based on the user's original prompt. Then briefly explain the solution.
 - Add a blurb to the end of the PR description about what model and harness is making the changes.
-- Do not include a verification section unless there are surprising steps that would help a user in a manual QA process of the work.
+- Do not include a verification information unless there are surprising steps that would help a user in a manual QA process of the work.
 - For Konfidens, you should open draft PRs; for all other projects, we prefer non-draft PRs.
+- Information not relevant to the changes in the PR should not be included in the PR text.
