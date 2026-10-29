@@ -7,7 +7,7 @@ The installed set is `grill-me`, `grilling`, `to-spec`, `to-tickets`, `code-revi
 Local adaptations:
 
 - `to-spec` uses repository testing skills or rules to decide testing seams when available, and otherwise asks the user. This preserves Aslak's change from commit `8ca4ac2`.
-- `retro` reads its bundled `references/writing-for-agents/SKILL.md` instead of invoking a global skill. The bundled files are unchanged from upstream, and `writing-for-agents` is not installed separately.
+- `retro` omits the `writing-for-agents` invocation and reference. No copy of that skill is bundled.
 
 All other installed skill files match that upstream revision.
 
