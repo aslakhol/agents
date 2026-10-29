@@ -28,9 +28,7 @@ agents/
 │       │   └── SKILL.md
 │       └── matt-pocock/
 │           ├── README.md
-│           ├── grill-me/
-│           │   └── SKILL.md
-│           └── grilling/
+│           └── grill-me/
 │               └── SKILL.md
 ├── scripts/
 │   └── install.ts
@@ -49,8 +47,8 @@ The real files live in this repo. Each agent gets symlinks where it expects to f
 | ---------------------- | --------------------------------- |
 | `~/.codex/AGENTS.md`   | `globals/AGENTS.md`               |
 | `~/.claude/CLAUDE.md`  | `globals/AGENTS.md`               |
-| `~/.agents/skills/grilling` | `globals/skills/matt-pocock/grilling/` |
-| `~/.claude/skills/grilling` | `globals/skills/matt-pocock/grilling/` |
+| `~/.agents/skills/grill-me` | `globals/skills/matt-pocock/grill-me/` |
+| `~/.claude/skills/grill-me` | `globals/skills/matt-pocock/grill-me/` |
 
 Since we flatten the skills into one list each installed skill needs a unique directory name.
 

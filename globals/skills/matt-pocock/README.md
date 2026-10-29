@@ -2,7 +2,7 @@
 
 Selected skills from [mattpocock/skills](https://github.com/mattpocock/skills), updated on 2026-10-29 to [d1478fcb140d](https://github.com/mattpocock/skills/tree/d1478fcb140db0b93c0c8df17bcfd311844749d0).
 
-The installed set is `grill-me`, `grilling`, `to-spec`, `to-tickets`, `code-review`, and `retro`.
+The installed set is `grill-me`, `to-spec`, `to-tickets`, `code-review`, and `retro`.
 
 Local adaptations:
 
