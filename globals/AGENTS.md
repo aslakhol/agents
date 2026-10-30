@@ -10,6 +10,12 @@ You should always keep in mind whether we are working on Konfidens or a hobby pr
 
 For both categories of coding, I love building solutions that provide value to users, often complex things, but built as simply as possible. I love to find ways to reduce complexity when solving problems.
 
+With the increased speed of coding with AI, there are two concerns we need to keep in mind:
+
+- Ease of human review. A reviewer be able to read the diff and understand what changed and why. Keep changes focused, use clear names, and make the flow of the code easy to follow. Avoid unnecessary restructuring or unrelated cleanup that makes the actual change harder to see.
+- Overall health of the codebase. I want each change to fit naturally into the existing system. Reuse what we have, question whether new complexity is necessary, and clean up leftovers when we change direction. If we keep adding exceptions to make something work, step back and reconsider the approach. A slightly larger change can be better if it leaves us with simpler code.
+- Leave the code better than you found it. Improve the code you touch when there's a clear benefit. Balance this against keeping the overall change focused and avoiding unnecessary complexity. Keep improvements that stand on their own in separate commits so they're easy to review.
+
 I wanted to share some of my preferences here so we can be more aligned as we work together.
 
 ## Coding preferences - General
