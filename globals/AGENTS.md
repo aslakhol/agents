@@ -10,24 +10,24 @@ You should always keep in mind whether we are working on Konfidens or a hobby pr
 
 For both categories of coding, I love building solutions that provide value to users, often complex things, but built as simply as possible. I love to find ways to reduce complexity when solving problems.
 
-With the increased speed of coding with AI, there are two concerns we need to keep in mind:
+## Priorities
 
-- Ease of human review. A reviewer be able to read the diff and understand what changed and why. Keep changes focused, use clear names, and make the flow of the code easy to follow. Avoid unnecessary restructuring or unrelated cleanup that makes the actual change harder to see.
+With the increased speed of coding with AI, we need to balance these priorities agianst the development of new functionality:
+
+- Ease of human review. A reviewer should be able to read the diff and understand what changed and why. Keep changes focused, use clear names, and make the flow of the code easy to follow. Avoid unnecessary restructuring or unrelated cleanup that makes the actual change harder to see.
 - Overall health of the codebase. I want each change to fit naturally into the existing system. Reuse what we have, question whether new complexity is necessary, and clean up leftovers when we change direction. If we keep adding exceptions to make something work, step back and reconsider the approach. A slightly larger change can be better if it leaves us with simpler code.
 - Leave the code better than you found it. Improve the code you touch when there's a clear benefit. Balance this against keeping the overall change focused and avoiding unnecessary complexity. Keep improvements that stand on their own in separate commits so they're easy to review.
-
-I wanted to share some of my preferences here so we can be more aligned as we work together.
 
 ## Coding preferences - General
 
 - Keep things simple. Channel “yagni” energy unless told otherwise.
 - Prefer built-in capabilities of our existing tools over custom implementations, even when that means accepting minor discrepancies with the spec. If meeting the spec would require substantial custom code, explain the simpler option and what we'd give up, then ask me before building the custom version.
-- TypeScript is useful; take advantage of it.
 - Don’t be scared to propose bold ideas if they can meaningfully benefit our work.
 - Tests are good when useful. Endless smoke tests, “regression tests” for feature deletions, testing the rendering of React components, etc much less good. Tests should be focused, not slop.
 
 ## Coding preferences - TypeScript
 
+- TypeScript is useful; take advantage of it.
 - any is the enemy. Inferred types are our friends. Our systems should adapt to changes, instead of requiring changes everywhere.
 - If your TS code looks like a Python dev wrote it, it is bad TS code.
 - Avoid one-line functions that are just casting wrappers.
@@ -36,10 +36,10 @@ I wanted to share some of my preferences here so we can be more aligned as we wo
 ## Visual and design work
 
 - I detest narrative copy in UI.
+- We will often be working from a handoff from claude design. I don’t meticulously prepare these handoffs before we start work. Expect artifacts of the design process, such as decisions that don’t take into account the technical realities or callbacks to previous iterations that aren’t present. Visual marks in the design may be marks of prototyping that shouldn’t be implemented (such as arrows indicating that a list will scroll).
 
 ## Work preferences
 
-- We will often be working from a handoff from claude design. I don’t meticulously prepare these handoffs before we start work. Expect artifacts of the design process, such as decisions that don’t take into account the techincal realities, callbacks to previous iterations that aren’t present. Visual marks in the design as marks of prototyping that shouldn’t be implemented (such as arrows indicating that a list will scroll).
 - You should run repo-wide commands such as test, type-check, or lint before you push to a branch or make a PR. Not many times while you work.
 - Local DBs have easy methods for resetting, which I will use when needed. You don’t need to worry about resetting local DB state unless asked.
 - I will often have a dev environment running; check and use that before spinning up your own environment if possible.
