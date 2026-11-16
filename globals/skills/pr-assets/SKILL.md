@@ -13,4 +13,4 @@ It prints two lines: the public URL, then a markdown snippet. Embed every image 
 
 URLs are permanent and public.
 
-The script needs `PR_ASSETS_KEY` in the environment. If it is missing, ask the user for it.
+The script reads `PR_ASSETS_KEY` from `.env` next to it (gitignored). If the key is missing, the script prints a setup command and exits. Stop and give the user that command to run themselves. Never ask for the key in chat or write the file for them.

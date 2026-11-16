@@ -7,7 +7,16 @@ BUCKET=konfidens-pr-assets
 REGION=eu-central-1
 
 file=${1:?usage: upload.sh <file>}
-: "${PR_ASSETS_KEY:?PR_ASSETS_KEY is not set (format ACCESS_KEY_ID:SECRET)}"
+env_file="$(dirname "$0")/.env"
+[ -f "$env_file" ] && . "$env_file"
+if [ -z "${PR_ASSETS_KEY:-}" ]; then
+  cat >&2 <<EOF
+PR_ASSETS_KEY is not set. Create $env_file with:
+
+  echo 'PR_ASSETS_KEY=ACCESS_KEY_ID:SECRET' > $env_file && chmod 600 $env_file
+EOF
+  exit 1
+fi
 
 name=$(basename "$file" | tr -c 'A-Za-z0-9._\n-' '-')
 type=$(file --mime-type -b "$file")
