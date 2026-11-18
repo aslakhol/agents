@@ -12,4 +12,5 @@ Follow the repo's conventions. A repo-specific PR skill takes precedence over th
 - End the description with a short blurb naming the model and harness making the changes.
 - Include verification information only when surprising steps would help the user manually QA the work.
 - Open draft PRs for Konfidens. Prefer non-draft PRs for all other projects.
+- If the PR changes UI, add before and after screenshots under an `#### Updates UI` heading. Include a short video when it shows the change more clearly than screenshots, such as an interaction or a multi-step flow. Capture with capture-browser-media and upload with pr-assets.
 - Keep the PR text relevant to the changes in the PR, avoid descriptions of secondary issues or discoveries not represented by the commits.
